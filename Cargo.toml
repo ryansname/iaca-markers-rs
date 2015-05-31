@@ -1,0 +1,4 @@
+[package]
+name = "iaca-markers"
+version = "0.1.0"
+authors = ["Ryan Lewis <ryansname@gmail.com>"]
