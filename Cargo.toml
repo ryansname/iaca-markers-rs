@@ -1,4 +1,11 @@
 [package]
 name = "iaca-markers"
-version = "0.1.0"
+version = "0.0.1"
 authors = ["Ryan Lewis <ryansname@gmail.com>"]
+
+homepage = "https://github.com/Ryanl92/iaca-markers-rs"
+
+description = "This library includes the IACA assembly commands to profile your code with the IACA tool."
+
+keywords = ["iaca", "intel", "analyzer"]
+license = "Apache-2.0"
