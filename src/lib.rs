@@ -1,4 +1,4 @@
-#![feature(asm)]
+#![feature(llvm_asm)]
 //! Provides macros to bench your application with [iaca](https://software.intel.com/en-us/articles/intel-architecture-code-analyzer)
 
 #[macro_use]
@@ -9,8 +9,8 @@
 macro_rules! iaca_start {
     () => {
         unsafe {
-            asm!("mov ebx, 111" :::: "intel");
-            asm!(".byte 0x64, 0x67, 0x90" :::: "intel");
+            llvm_asm!("mov ebx, 111" :::: "intel");
+            llvm_asm!(".byte 0x64, 0x67, 0x90" :::: "intel");
         }
     }
 }
@@ -21,8 +21,8 @@ macro_rules! iaca_start {
 macro_rules! iaca_end {
     () => {
         unsafe {
-            asm!("mov ebx, 222" :::: "intel");
-            asm!(".byte 0x64, 0x67, 0x90" :::: "intel");
+            llvm_asm!("mov ebx, 222" :::: "intel");
+            llvm_asm!(".byte 0x64, 0x67, 0x90" :::: "intel");
         }
     }
 }
