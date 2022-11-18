@@ -1,3 +1,6 @@
+## Unsupported
+I consent to the transfer of this crate to the first person who asks help@crates.io for it. 
+
 # iaca-markers-rs
 Adds [IACA](https://software.intel.com/en-us/articles/intel-architecture-code-analyzer) compatible macros for rust to identify and fix bottlenecks and improve throughput.
 
